@@ -4,7 +4,7 @@ function detectLang()
  var lang = getParameterValue("lang");
   if (lang==null || lang == "") 
     {
-     $.get("http://ipinfo.io", function(response) {
+     $.get("https://ipinfo.io", function(response) {
         loaded(response.country.includes('es-MX')?'sp':'en');
 }, "jsonp");
     } 
