@@ -3961,7 +3961,12 @@ color:#ffffff;}
 
 .flag-div{
 position: absolute;
-top: 0.5em;
-right: 8em;
+top: 0.3em;
+right: 9em;
+}
+
+.circle-img{
+  border-radius: 80%;
+  width:200px
 }
  

@@ -19,8 +19,19 @@
 	      <link rel="localization" hreflang="en" href="lang/en.json" type="application/vnd.oftn.l10n+json"/>
 		  <script type="text/javascript" src="js/i18n.js"></script>
 	      <script type="text/javascript" src="js/script.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_YyAATK5cObaluoJbZ8BAr");
+   })();
+</script>
+
+
+</script>
  	</head>
-	<body onload="loaded()">
+	<body onload="detectLang()">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -29,8 +40,8 @@
 					<header id="header" class="alt">
 						<h1><a href="index.html">Hoili Financial</a></h1>
 					 <div class="flag-div">
-					 <span><a href="index.html?lang=en"><img src="images/flagUK.svg" width="50px"   alt="" /></a></span>
-					 <span><a href="index.html?lang=sp"><img src="images/flagMexico.svg"   width="50px" alt="" /></a></span>
+					 <span><a href="index.html?lang=en"><img src="images/flagUK.svg" width="40px"   alt="" /></a></span>
+					 <span><a href="index.html?lang=sp"><img src="images/flagMexico.svg"   width="40px" alt="" /></a></span>
 					 </div>
 						<nav>
 							<a href="#menu" id="menu_text">menu_text</a>
@@ -57,7 +68,7 @@
 					<section id="banner">
 						<div class="inner">
 							<div class="logo"> <!--class="icon fa-diamond" --></div> 
-						  <h2><img src="images/color_logo_transparent@2x.png" width="100" alt="" /></h2>
+						  <h2><img src="images/color_logo_transparent@2x.png" width="30%" alt="" /></h2>
 							<p><strong id="inclusive_banking_for_inspiring_people_text">inclusive_banking_for_inspiring_people_text</strong></p>
 						</div>
 					</section>
@@ -68,8 +79,8 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image">
- 							<img src="images/photo-1511123677944-371780caf6f9.jpeg" width="100"/>  
+									<a class="image" href="#" >
+ 							<img src="images/photo-1511123677944-371780caf6f9.jpeg"/>  
 								 
 									</a> 		
 									<div class="content">
@@ -148,7 +159,7 @@
 						<div class="inner">
 							<h2 class="major" id="we_soon_launching_text">we_soon_launching_text</h2>
 							<p id="sign_up_for_our_text">sign_up_for_our_text</p>
-							<form method="post" action="https://formspree.io/your@email.com">
+							<form method="post" action="#">
 								<div class="field">
 									<label for="name" id="name_text">name_text</label>
 									<input type="text" name="name" id="name" />
@@ -162,7 +173,7 @@
 									<textarea placeholder="Write here" name="message" id="message" rows="4"></textarea>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Sign up" /></li>
+									<li><input type="button" onClick="sendEmail();" value="Sign up" /></li>
 								</ul>
 							</form>
 							<ul class="contact">
